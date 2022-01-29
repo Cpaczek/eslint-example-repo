@@ -6,6 +6,15 @@
   <router-view />
 </template>
 
+<script setup lang="ts">
+import { reactive } from "vue";
+const data = reactive({
+  type: 1,
+  title: "Hello BalmUI",
+  openDrawer: false,
+});
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
